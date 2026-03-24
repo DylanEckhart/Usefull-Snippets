@@ -1,3 +1,4 @@
+<?php
 add_action( 'woocommerce_after_checkout_validation', 'validate_checkout', 10, 2);
 function validate_checkout( $data, $errors ){
 	if (  ! preg_match('/[0-9]/', $data[ 'billing_address_1' ] ) ){
