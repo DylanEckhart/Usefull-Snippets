@@ -1,5 +1,7 @@
 <?php
 // WooCommerce - Laagste prijs tonen van variabele producten
+// Deze snippet toont bij variabele producten alleen de laagste prijs, met optioneel het label “Vanaf” als er prijsverschillen zijn.
+
 add_filter( 'woocommerce_get_price_html', 'change_variable_products_price_display', 10, 2 );
 function change_variable_products_price_display( $price, $product ) {
 
