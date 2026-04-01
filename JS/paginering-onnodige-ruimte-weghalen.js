@@ -1,5 +1,4 @@
 // JetSmartFilters - Paginering onnodige ruimte weghalen
-
 // Deze code zorgt ervoor dat de paginering-widget van JetSmartFilters automatisch wordt verborgen als er geen pagina's zijn om weer te geven (bijvoorbeeld wanneer alle resultaten op één pagina passen).
 
 jQuery(document).ready(function($) {
