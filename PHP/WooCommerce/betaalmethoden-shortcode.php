@@ -2,6 +2,8 @@
 // WooCommerce - Betaalmethoden iconen
 // Deze code verzamelt de iconen van je actieve WooCommerce betaalmethoden en presenteert ze overzichtelijk naast elkaar in strak afgewerkte blokjes.
 
+// Gebruik shortcode [payment_methods_icons]
+
 add_shortcode( 'payment_methods_icons', 'render_payment_gateway_icons' );
 
 function render_payment_gateway_icons() {
