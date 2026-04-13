@@ -6,11 +6,13 @@ jQuery(document).ready(function($) {
         $('.jet-smart-filters-pagination').each(function() {
             var $this = $(this);
             var $widget = $this.closest('.elementor-widget-jet-smart-filters-pagination');
+            var $targetToHide = $widget.length > 0 ? $widget : $this;
+            var pageCount = $this.find('.jet-filters-pagination__item').length;
 
-            if ($this.find('a, span').length === 0) {
-                $widget.hide();
+            if (pageCount < 2) {
+                $targetToHide.hide();
             } else {
-                $widget.show();
+                $targetToHide.show();
             }
         });
     }
@@ -18,6 +20,6 @@ jQuery(document).ready(function($) {
     checkEmptyPagination();
 
     $(document).on('jet-filter-custom-content-render', function() {
-        checkEmptyPagination();
+        setTimeout(checkEmptyPagination, 50);
     });
 });
