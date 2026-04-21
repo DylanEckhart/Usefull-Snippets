@@ -1,5 +1,4 @@
 // Elementor - Dienst parameter aan URL
-
 // Deze snippet leest de 'dienst'-parameters uit de URL en vinkt bij het laden van de pagina automatisch de overeenkomende checkboxes in een formulier aan.
 
 document.addEventListener('DOMContentLoaded', function() {
