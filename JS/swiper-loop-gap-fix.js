@@ -1,5 +1,4 @@
 // Elementor & JetEngine - Swiper Loop Gap Fix
-
 // Deze snippet zoekt automatisch naar alle actieve Swiper-sliders op je website die de 'loop' functie gebruiken. Het voegt extra gekloonde slides toe en herlaadt de loop-functie, zodat de lege witte ruimte aan de rechterkant wordt opgevuld zonder dat je de originele broncode van de sliders hoeft aan te passen.
 
 document.addEventListener('DOMContentLoaded', function() {
