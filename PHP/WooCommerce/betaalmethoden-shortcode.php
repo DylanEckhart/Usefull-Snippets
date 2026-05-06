@@ -12,7 +12,7 @@ function render_payment_gateway_icons() {
     }
 
     $available_gateways = WC()->payment_gateways->get_available_payment_gateways();
-    if ( !empty ($available_gateways) {
+    if ( !empty ($available_gateways) ) {
         $html = '<div class="payment-methods-grid">';
 
         foreach ( $available_gateways as $gateway ) {
