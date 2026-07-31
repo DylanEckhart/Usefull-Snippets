@@ -1,0 +1,22 @@
+/* Met deze code kun je de gecentreerde slide vergoten, tenopzichte van de andere. Belangrijk is dat center mode aan staat!
+* Met de onderste variabelen kun je de hoogtes van de active en niet actieve slides regelen, ook responsive.
+*/
+.jet-listing-grid__item {
+  --jet-item-height-base: clamp(27.5rem, 23.3884rem + 8.577vw, 30.25rem);
+  --jet-item-height-active: clamp(27.5rem, 18.5292rem + 18.7135vw, 33.5rem);
+  
+  .elementor-element-3c6ae2c {
+    height: var(--jet-item-height-base);
+    width: 100%;
+    transform: scale(1, 1);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+    will-change: transform;
+  }
+  
+  &.swiper-slide-active {
+    .elementor-element-3c6ae2c {
+      transform: scale(1, calc(var(--jet-item-height-active) / var(--jet-item-height-base)));
+    }
+  }
+}
